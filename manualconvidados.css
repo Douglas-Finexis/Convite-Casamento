@@ -1,0 +1,65 @@
+body {
+    padding: 0;
+    background-color: #645f49;
+}
+
+.titulo-manual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.img-manual {
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+}
+
+.mais-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mais-info h1 {
+    text-align: center;
+    color: #f1ebdc;
+    font-size: 55px;
+    font-family: "Bonheur Royale", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 1%;
+}
+
+.mais-info p {
+    text-align: center;
+    color: #f1ebdc;
+    line-height: 1.6;
+    font-size: 40px;
+    font-family: "Bonheur Royale", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    color: #f1ebdc;
+    font-size: 40px;
+    font-family: "Bonheur Royale", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@media (max-width: 980px) {
+    .mais-info h1
+    {
+        font-size: 35px;
+    }
+    .mais-info p {
+        font-size: 25px;
+    }
+    a {
+        font-size: 30px;
+    }
+}

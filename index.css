@@ -1,0 +1,164 @@
+body {
+    padding: 0;
+    
+}
+
+.saudacao{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding-bottom: 6%;
+}
+
+.img-igreja {
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 30px;
+    border: 1px groove rgba(179, 147, 79, 0);
+    box-shadow: rgb(179, 147, 79) 1px 1px 8px 1px;
+}
+/* ----------------------------------------------------- */
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.frase-1 {
+    padding: 10px;
+    background-color: rgba(179, 147, 79, 0.616);
+    border-radius: 15px 3px 15px 3px;
+    font-family: "Epunda Slab", serif;
+    font-weight: normal;
+}
+
+.frase-1 h2 {
+    font-size: clamp(1rem, 5vw, 2rem);
+}
+
+.data-casamento {
+    display: flex;
+    padding: 5%;
+}
+
+.img-data {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.versiculo {
+    object-fit: cover;
+    background-color: rgba(179, 147, 79, 0.616);
+    border-radius: 15px 3px 15px 3px;
+    font-family: "Epunda Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    text-align: center;
+    padding: 1%;
+}
+
+.versiculo h2 {
+    font-size: clamp(1rem, 5vw, 2rem);
+}
+
+/* ----------------------------------------------------- */
+
+.menu-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 1fr));
+  gap: 28px 36px;                 /* linha x coluna */
+  justify-items: center;
+  align-items: start;
+  max-width: 520px;               /* ajuste ao seu layout */
+  margin: 0 auto;
+  padding-top: 5%;
+}
+
+.card {
+  display: grid;
+  grid-template-rows: auto auto;
+  place-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: #6c5aa8;                 /* seu lilás */
+  gap: 10px;
+}
+
+.card img {
+  width: 90px;                    /* ajuste conforme seu ícone */
+  aspect-ratio: 1/1;
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 4px 10px rgba(0,0,0,.12));
+  transition: transform .2s ease;
+}
+
+.card:hover img { transform: translateY(-2px) scale(1.03); }
+
+.card span {
+  font-family: "Epunda Slab", serif;  /* sua fonte */
+  font-size: clamp(.9rem, 2.2vw, 1.1rem);
+  line-height: 1.2;
+  text-decoration: none;
+  color: black;
+}
+
+/* célula “vazia” só pra completar a grade 2x3 em desktop */
+.ghost { width: 1px; height: 1px; }
+
+/* Mobile: empilha em 1 coluna */
+@media (max-width: 420px) {
+  .menu-cards { grid-template-columns: 1fr; gap: 22px; max-width: 360px; }
+  .ghost { display: none; }
+}
+
+/* ----------------------------------------------------- */
+
+#contador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-family: "Epunda Slab", serif;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border: 1px solid  rgba(179, 147, 79, 0.616);
+  border-radius: 15px;
+  box-shadow: rgb(179, 147, 79) 1px 1px 8px 1px;
+}
+
+.tempo {
+  text-align: center;
+  padding: 5px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,.1);
+  min-width: 80px;
+}
+
+.tempo span {
+  display: block;
+  font-size: clamp(1rem, 5vw, 4rem);
+  font-weight: bold;
+  color: rgb(179, 147, 79);
+  text-shadow: black 1px 1px 8px 1px;
+}
+
+.tempo small {
+  display: block;
+  margin-top: 5px;
+  font-size: clamp(0.3rem, 3vw, 0.9rem);
+  color: #333;
+  font-weight: bold;
+}
+
+.tempo:not(:last-child) span:first-child::after {
+  content: ":";
+  margin-left: 5px;
+  color: rgb(179, 147, 79);;
+  font-weight: bold;
+}
+
+

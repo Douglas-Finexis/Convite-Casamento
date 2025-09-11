@@ -1,0 +1,44 @@
+body {
+    padding: 0;
+    background-color: #645f49;
+}
+
+h1 {
+    text-align: center;
+    color: #f1ebdc;
+    font-size: 50px;
+    font-family: "Bonheur Royale", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    text-align: center;
+    color: #f1ebdc;
+    line-height: 1.6;
+    font-size: 40px;
+    font-family: "Bonheur Royale", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    color: #f1ebdc;
+    font-size: 40px;
+    font-family: "Bonheur Royale", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@media (max-width: 980px) {
+    h1
+    {
+        font-size: 35px;
+    }
+    p {
+        font-size: 25px;
+    }
+    a {
+        font-size: 30px;
+    }
+}
