@@ -161,4 +161,22 @@ main {
   font-weight: bold;
 }
 
+.frase-2 {
+    margin-top: 5%;
+    padding: 10px;
+    background-color: rgba(179, 147, 79, 0.616);
+    border-radius: 15px 3px 15px 3px;
+    font-family: "Epunda Slab", serif;
+    font-weight: normal;
+}
+
+.frase-2 h1 {
+    font-size: clamp(1rem, 5vw, 2rem);
+}
+
+.frase-2 p {
+  text-align: center;
+  font-weight: bold;
+  font-size: clamp(1rem, 3vw, 1.3rem);
+}
 
